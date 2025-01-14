@@ -45,8 +45,8 @@ nav ul li {
   /* border: 2px solid black; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 130px;
+  justify-content: space-between;
+
   padding: 20px;
 }
 .hero-titel {
@@ -146,45 +146,41 @@ nav ul li {
 
 /* third number page end  */
 
-
-
 /* four page start hear */
-.four-container{
+.four-container {
   max-width: 1110px;
   /* border: 2px solid red; */
   margin: 0 auto;
   /* display: flex; */
 }
-.four-content{
-display: flex;
-align-items: center;
-/* border: 2px solid black; */
-/* justify-content: space-between; */
-gap: 96px;
+.four-content {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* justify-content: space-between; */
+  gap: 96px;
 }
-.gear-btn{
+.gear-btn {
   width: 155px;
-height: 44px;
-background: rgb(224, 44, 109);
-color: white;
-border: none;
-border-radius: 5px;
+  height: 44px;
+  background: rgb(224, 44, 109);
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 /* four page end hear */
 
-
-
 /* footer section start */
 
-.footer{
+.footer {
   max-width: 1110px;
   /* border: 2px solid red; */
   margin: 0 auto;
   margin-top: 50px;
   background-color: ;
 }
-.footer-content{
+.footer-content {
   /* border: 2px solid rgb(158, 45, 239); */
   text-align: center;
   color: rgb(255, 255, 255);
@@ -192,10 +188,8 @@ border-radius: 5px;
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: center; */
-  background-color:rgb(10, 8, 38);
-
+  background-color: rgb(10, 8, 38);
 }
-
 
 @media screen and (max-width: 576px) {
   .hero,
@@ -205,7 +199,7 @@ border-radius: 5px;
     flex-direction: column;
   }
   .hero {
-    margin-top: 150px;
+    flex-direction: column-reverse;
   }
   nav ul li {
     margin: 1px;
@@ -219,8 +213,8 @@ border-radius: 5px;
     /* margin: 0 auto; */
   }
 }
-/* @media screen and (min-width:576px) and (max-width:970px) {
-  .second-content{
-    grid-template-columns: repeat(1,1fr);
+@media screen and (min-width: 576px) and (max-width: 970px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-} */
+}
