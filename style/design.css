@@ -151,10 +151,17 @@ nav ul li {
 /* four page start hear */
 .four-container{
   max-width: 1110px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 0 auto;
+  /* display: flex; */
 }
-
+.four-content{
+display: flex;
+align-items: center;
+/* border: 2px solid black; */
+/* justify-content: space-between; */
+gap: 96px;
+}
 .gear-btn{
   width: 155px;
 height: 44px;
@@ -169,7 +176,8 @@ border-radius: 5px;
 @media screen and (max-width: 576px) {
   .hero,
   .header,
-  .unorder-list {
+  .unorder-list,
+  .four-content {
     flex-direction: column;
   }
   .hero {
