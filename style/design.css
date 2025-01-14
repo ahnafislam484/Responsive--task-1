@@ -85,7 +85,7 @@ nav ul li {
 
 
 
-/* @media screen and (max-width:576px) {
+@media screen and (max-width:576px) {
   .hero, 
   .header,
   .unorder-list{
@@ -98,4 +98,4 @@ nav ul li {
   nav ul li{
     margin: 1px;
   }
-} */
+}
