@@ -9,8 +9,8 @@
 
 .poppins-bold {
   font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
+  /* font-weight: 700;
+  font-style: normal; */
 }
 
 /* nav bar stayle start hear */
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-between;
 }
- .unorder-list {
+.unorder-list {
   /* border: 2px solid green; */
   display: flex;
 }
@@ -75,27 +75,100 @@ nav ul li {
   /* padding-top: 30px; */
   margin: 20px;
 }
-.img{
+.img {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 /* hero section end hear  */
 
+/* second page start hear */
 
+.second-container {
+  max-width: 1110px;
+  min-height: 110px;
+  /* border: 2px solid steelblue; */
+  margin: 0 auto;
+  margin-top: 150px;
+}
 
+.second-content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  margin: 34px 60px 35px 61px;
+}
+/* second page end hear */
 
-@media screen and (max-width:576px) {
-  .hero, 
+/* third number page start  */
+.card-container-head {
+  max-width: 1047px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+.card-title-3 {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+}
+.rating {
+  color: rgb(251, 130, 0);
+  font-size: 20px;
+}
+
+.price {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(86, 86, 95);
+}
+.card-description {
+  color: rgb(120, 120, 133);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 2px;
+}
+
+.card-content {
+  /* border: 2px solid red; */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+
+/* third number page end  */
+
+@media screen and (max-width: 576px) {
+  .hero,
   .header,
-  .unorder-list{
+  .unorder-list {
     flex-direction: column;
   }
-  .hero{
+  .hero {
     margin-top: 150px;
-
   }
-  nav ul li{
+  nav ul li {
     margin: 1px;
   }
+
+  .second-content,
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .second-content {
+    /* margin: 0 auto; */
+  }
 }
+/* @media screen and (min-width:576px) and (max-width:970px) {
+  .second-content{
+    grid-template-columns: repeat(1,1fr);
+  }
+} */
